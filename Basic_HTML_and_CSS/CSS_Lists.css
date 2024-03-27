@@ -1,0 +1,19 @@
+ol {
+	list-style-type: upper-roman;
+	color: blue;
+}
+
+ul {
+	list-style-type: square;
+	color: green;
+}
+
+h1 {
+	color: blue;
+	text-shadow: 2px 2px 5px red;
+}
+
+h2 {
+	color: red;
+	text-shadow: 2px 2px 5px blue;
+}

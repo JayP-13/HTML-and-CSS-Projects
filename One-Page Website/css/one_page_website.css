@@ -1,0 +1,14 @@
+html {
+    font-family: Lucia Console, Courier New;
+    font-size: 16px;
+}
+
+input {
+    width: 50%;
+    background-color: cornflowerblue;
+    border: 1px solid #000000;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+

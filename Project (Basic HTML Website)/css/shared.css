@@ -26,7 +26,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Open Sans', sans-serif;
 }
 
-h1{
+h1 {
     line-height: 50px;
     font-weight: 900;
     font-size: 30px;
@@ -36,9 +36,9 @@ h1{
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
-h1::after { /*This is the underlind */
+h1::after { /*This is the underline */
     display:block;
-    content: "";
+    content: " ";
     height: 2px;
     width: 150px;
     background: #e91c1c;
@@ -52,7 +52,7 @@ h2 {
 }
 
 h3 {
-    line-height: 50px;
+    line-height: 30px;
     padding-bottom: 20px;
 }
 
@@ -168,9 +168,6 @@ section {
     font-size: 4.5em;
     text-align: left;
     font-family: impact, sans-serif;
-    line-height: 2;
-    font-weight: 900;
-    border: 5px double #fff;
     line-height: 2;
     font-weight: 900;
     border: 5px double #fff;
@@ -309,7 +306,7 @@ section {
     text-decoration: underline;
 }
 
-.submit input[type='submit'] {
+.submit input[type="submit"] {
     color: rgb(255, 255, 255);
     cursor: pointer;
     border: none;
@@ -362,7 +359,7 @@ section {
 
 @media (min-width: 768px) {
     .container {
-        width: 970px;
+        width: 750px;
     }
 }
 

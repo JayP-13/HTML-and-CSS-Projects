@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <!--Head-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" />
+        <link rel="stylesheet" type="text/css" href="css/portfolio.css">
+    </head>
+
+    <!--Body-->
+    <body class="Background">
+
+        <!--Nav Bar-->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#GitHub">Github</a>
+            <a href="#Contact">Contact</a>
+        </div>
+
+        <!--Breaks inserted to add space between the navbar and the first heading-->
+        <br>
+        <br>
+
+        <!--Background video-->
+        <div id="Home">
+            <video autoplay muted loop id="Typing_Video">
+                <source src="images/video1.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!--Video text-->
+        <div class="Video_Text">
+            <h1 class="white-text">Jay Pelletier's Portfolio</h1>
+            <strong>
+                <p class="center">
+                    <q>Everybody in this country should
+                    <br>learn to program a computer...
+                    <br>because it teaches you how to think.
+                    </q>
+                    <br>-Steve Jobs
+                    <br>My name is Jay Pelletier. Welcome to my portfolio website. On it, I will tell you about my background and experience.
+                    <br>
+                    <br>Thank you for stopping by and enjoy!!!
+                </p>
+            </strong>
+        </div>
+        
+
+        <!--About Section-->
+        <div class="Row" id="About">
+            <!--Left Column-->
+            <div class="Column_2">
+                <img src="images/image1.jpg" alt="PC at desk picture">
+            </div>
+            <!--Right Column-->
+            <div class="Column_1">
+                <h1>About</h1>
+                <p>
+                    I am a software developer who loves to code and work with others! I enjoy time with my family and spending time outside.
+                    <br>
+                    <br>I am a current student of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>'s AI Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, sql, C# and more.
+                    <br>
+                    <br>I am a full-stack developer and would love to work with you on your project. <a href="#Contact">Contact</a> me below!
+                </p>
+            </div>
+        </div>
+
+        <!--GitHub Section-->
+        <div class="Row" id="GitHub">
+            <!--Left Column-->
+            <div class="Column_1">
+                <h1>GitHub</h1>
+                <p>
+                    You can view my coding projects on my GitHub profile here:
+                    <br>
+                    <p class="center"><a href="https://github.com/Laziej" target="_blank"> Jay's GitHub</a></p>
+                </p>
+            </div>
+            <!--Right Column-->
+            <div class="Column_2">
+                <a ref="https://github.com/Laziej" target="_blank"><img src="images/image2.jpg" alt="GitHub logo"></a>
+            </div>
+        </div>
+
+        <!--Contact Section-->
+        <div class="Row" id="Contact">
+            <!--Contact image, left column-->
+            <div class="Column_2 Column_tall">
+                <img src="images/image3.jpg" alt="Contact_Image">
+            </div>
+            <!--Contact Form, right column-->
+            <div class="Column_1 Column_tall">
+                <h1>Contact</h1>
+                <!--This specifies where and how to send the form data; leaving it blank-->
+                <form action="" method="POST"> <!--Here we are utilizing a 3rd party service to submit the contract form data, insert your formspree endpoint in the action attribute-->
+                    <label>Name:</label>
+                        <input type="text" placeholder="Please enter your name here">
+                    <label>Email:</label>
+                        <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+                    <label>Message:</label>
+                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                        <input type="submit" value="SUBMIT">
+                </form>
+            </div>
+        </div>
+
+        <!--Footer Section-->
+        <footer>
+            <p>
+                <p class="center">&copy Prosper Consulting Inc., <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Acadamey</a></p>
+                <br>
+            </p>
+        </footer>
+    </body>
+</html>

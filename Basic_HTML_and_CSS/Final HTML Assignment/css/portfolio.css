@@ -1,0 +1,292 @@
+/* Body */
+Body {
+    margin: 0%
+}
+
+/* Heading 1 elements */
+h1{
+    text-transform: uppercase;
+    font-family: "Trebuchet MS", Optima;
+    text-align: center;
+    margin-top: 3%;
+    color: #1a1a1a;
+}
+
+/* Heading 1 element hover effect */
+h1:hover {
+    filter: grayscale(5%);
+    transform: scale(1.1);
+    transition: transform 1s;
+}
+
+/*Styling for portfolio title text*/
+.white-text {
+    color: #00bfff;
+}
+
+/* Paragraph elements */
+p {
+    font-family: Perpetua, Rockwell Extra Bold;
+    text-align:justify;
+    letter-spacing: 1px;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Paragraph element hover effect */
+p:hover {
+    transition: transform 1s;
+    transform: scale(1.01);
+}
+
+/*Center Class - This applies to all elements with the class "center" */
+.center {
+    text-align: center;
+}
+
+/*Center class hover effect - This only affects the quote, github link, and footer */
+.center:hover {
+    transition: transform 10s;
+    transform: scale(1.1);
+}
+
+/* Anchor elements*/
+a {
+    color: blue;
+}
+
+/* Quotation elements */
+q {
+    font-style:italic;
+}
+
+/* Image elements */
+img {
+    filter: drop-shadow(4px 4px 5px blue);
+    border-radius: 8px;
+    max-width: 100%;
+    height: 340px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Image element hover effects */
+img:hover {
+    filter: drop-shadow(4px 4px 5px blue);
+    transition: transform 1s;
+    transform: scale(1.1);
+}
+
+/*The @media rule is used in media queries to apply different styles for different media/tyupes of devices */
+/*On screens 576px and smaller the images will be 100px tall and centered vertically in the column */
+@media screen and (max-width:576px) {
+    img {
+        height: 100px;
+        margin-top: 150px;
+    }
+}
+
+/*Styling for footer element */
+footer {
+    padding: 2%;
+    background-color: darkblue;
+}
+/* End of General Styling */
+
+/* Navbar Styling */
+.Navbar {
+    overflow: hidden;
+    background-color: Crimson;
+    position:fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    -webkit-animation: moveNav 5s;
+    animation: moveNav 5s;
+}
+
+/* moveNav animation effect for moving the nav bar in from the left of the screen */
+@keyframes moveNav {
+    from {left: -100vw;}
+    to {left: 0vw;}
+}
+
+/* Navbar link */
+.Navbar a {
+    float: left;
+    display: block;
+    color: darkblue;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: fantasy, Helvetica;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    -webkit-animation: moveNavText 5.75;
+    animation: moveNavText 5.75;
+}
+
+/* moveNavText animation effect for moving the navbar text from above the view to the navbar */
+@keyframes moveNavText {
+    from {top: -100vw;}
+    to {top: 0vw;}
+}
+
+/*Screens 576px and smaller will display navbar links equally distributed */
+@media screen and (max-width: 576px) {
+    .Navbar a{
+        width: 25%;
+        font-size: 12px;
+    }
+}
+
+/* Navbar hover effects */
+.Navbar a:hover {
+    background-color: darkblue;
+    color: crimson;
+    font-weight: bold;
+}
+
+/* Navbar home button */
+.Navbar a.active {
+    background-color: darkblue;
+    color: crimson;
+}
+/* End of Navbar Styling */
+
+/* Video Styling */
+/* Formatting for background video */
+#Typing_Video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    z-index: -1;
+}
+
+/* Screens that are 576px and smaller will not display the background video */
+@media screen and (max-width: 576px) {
+    #Typing_Video {
+        display: none;
+    }
+}
+
+/* Text over the video */
+.Video_Text {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    -webkit-animation: moveVideoText 5.75s;
+    animation: moveVideoText 5.75s;
+}
+
+/* This animation effect causes the overlay video text to move up from the bottom of the page upon page load */
+@keyframes moveVideoText {
+    from {top: -100vw;}
+    to {top: 0vw;}
+}
+/* End of video styling */
+
+/* Table Styling - This section covers the styling of the columns and rows with the table */
+* {
+    box-sizing:border-box;
+}
+
+.Column_1 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 3%;
+    height: 400px;
+    background-color: #f2f2f2;
+}
+/* Screens 576px and smaller will display a scroll bar if the text overflows the column height */
+@media screen and (max-width: 576px) {
+    .Column_1 {
+        overflow: auto;
+    }
+}
+
+.Column_2 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 1.9%;
+    height: 400px;
+    background-color: crimson;
+}
+
+/* This class is applied to the columns in the final row, overriding the height and padding to provide more room for the contact form while keeping the rest of the formatting from Column_1 or Column_2 */
+.Column_tall {
+    padding-top: 3.5%;
+    height: 450px;
+}
+
+/* This inserts something after the contect of selected elements (in this case the elements with class "Row") */
+.Row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* End of table styling */
+
+/* Contact Form Styling */
+/* input[type=text] targets all the text input sections of the contact form */
+input[type=text] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: Perpetua, Rockwell Extra Bold;
+}
+
+/* Hover effects for input boxes */
+input[type=text]:hover {
+    box-shadow: 0 0 5px #00004d inset;
+}
+
+/*Submit button */
+input[type=SUBMIT] {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Perpetua, Rockwell Extra Bold;
+}
+
+/* Hover effect for submit button */
+input[type=SUBMIT]:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.5);
+    transition: transform 1.5s;
+}
+
+/* Form element */
+form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    font-family: "Trebuchet MS", Optima;
+}
+/* End of contact form styling */
+
+
+
+
+
+

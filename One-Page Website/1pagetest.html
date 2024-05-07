@@ -110,6 +110,100 @@
 						</div>
 					</div>
 					<!--End Photo 6-->
+
+    <!-- Images used to open the lightbox -->
+<div class="row">
+    <div class="column">
+        <img src="./images\thumbnail_1small.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+    </div>
+    <div class="column">
+        <img src=" ./images\thumbnail_2small.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+    </div>
+    <div class="column">
+        <img src=" ./images\thumbnail_3small.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+    </div>
+    <div class="column">
+        <img src=" ./images\thumbnail_4small.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+    </div>
+    <div class="column">
+        <img src=" ./images\thumbnail_5small.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+    </div>
+    <div class="column">
+        <img src=" ./images\thumbnail_6small.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+    </div>
+  </div>
+  
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+  
+      <div class="mySlides">
+        <div class="numbertext">1 / 6</div>
+        <img src="./images\thumbnail_1.jpg" style="width:50%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">2 / 6</div>
+        <img src="./images\thumbnail_2.jpg" style="width:50%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">3 / 6</div>
+        <img src="./images\thumbnail_3.jpg" style="width:50%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">4 / 6</div>
+        <img src="./images\thumbnail_4.jpg" style="width:50%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">5 / 6</div>
+        <img src="./images\thumbnail_5.jpg" style="width:50%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">6 / 6</div>
+        <img src="./images\thumbnail_6.jpg" style="width:50%">
+      </div>
+
+  
+      <!-- Next/previous controls -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+      <!-- Caption text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+  
+      <!-- Thumbnail image controls -->
+    <div class="column">
+        <img class="demo" src="./images\thumbnail_1.jpg" onclick="currentSlide(1)" alt="Gold PS5">
+      </div>
+  
+    <div class="column">
+        <img class="demo" src="./images\thumbnail_2.jpg" onclick="currentSlide(2)" alt="CyberPunk">
+      </div>
+  
+    <div class="column">
+        <img class="demo" src="./images\thumbnail_3.jpg"  onclick="currentSlide(3)" alt="Halo 4">
+      </div>
+  
+    <div class="column">
+        <img class="demo" src="./images\thumbnail_4.jpg" onclick="currentSlide(4)" alt="Spiderman">
+      </div>
+
+    <div class="column">
+        <img class="demo" src="./images\thumbnail_5.jpg" onclick="currentSlide(4)" alt="Halo 5">
+    </div>
+
+    <div class="column">
+            <img class="demo" src="./images\thumbnail_6.jpg" onclick="currentSlide(4)" alt="Starwars">
+    </div>
+
+  </div>
 		
 		
 	<body>
@@ -150,12 +244,7 @@
 	<footer>
 		<p>&copy; 2004 Custom Video Game Systems.</p>
 	</footer>
-		<!--End Footer-->
-
-		<div class="lightbox">
-			<span class="close">&times;</span>
-			<img class="lightbox-image" src="" alt="lightbox-image">
-		</div>
+		<!--End Footer-->	
 
 
 	</body>

@@ -1,3 +1,9 @@
+
+/*affects entire document */
+html {
+    scroll-behavior: smooth; /* this ensures that the page scrolling is smooth when the buttons on the nav bar is clicked */
+}
+
 /* Body */
 Body {
     margin: 0%
@@ -191,6 +197,115 @@ footer {
 }
 /* End of video styling */
 
+/***Slideshow Styling *******/
+#Slideshow_Background {
+    background: rgba(255, 255, 255, 0.35); /*This creates a slightly transparent white background that's placed over the video in the background */
+}
+
+.mySlides {
+    display: none; /* This prevents the images from being displayed, we will use JS to display these */
+}
+
+/*Slideshow section / container */
+#Slideshow_Container {
+    width: 39.5vw;
+    height: auto;
+    padding-top: 4%;
+    position: relative;
+    margin: auto;
+}
+
+/*remove the underline from the previous and next buttons on the slidewhoe */
+#Slideshow_Container a {
+    text-decoration: none;
+}
+
+/* Images contained within the slideshow */
+.Slideshow_Images {
+    vertical-align: middle;
+    height: auto;
+    box-shadow: 0px 5px 10px 12px rgba(0, 0, 0, .75);
+    width: 100%
+}
+
+/* next and previous buttons */
+.Previous, .Next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 2vw;
+    color: darkgray;
+    font-weight: bold;
+    font-size: 1.5vw;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    transition: 0.6s ease;
+}
+
+.Next {
+    right: 0; /* this moves the next button to the right side of the slideshow container*/
+    border-radius: 3px 0 0 3px; /* this changes the border radius on the next button to the top and bottom left of the button */
+}
+
+.Previous:hover, .Next:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Makes the background of the arros a transparent gray color*/
+    color: white; /*Makes the arrows white when hovered over */
+}
+
+/*Slideshow text */
+.text {
+    color: white;
+    padding: 1vw;
+    position: absolute; /*this ensures the text is positioned within the image */
+    bottom: 0; /* this property sets the text at the bottom of the image */
+    width: 100%; /*The element covers the full width of the image */
+    text-align: center; /*the text is center aligned within the image */
+    font-family: Perpetua, Rockwell Extra Bold;
+    letter-spacing: .1vw; /* this gives slight spacing between the letters */
+    font-size: 1.5vw; /* font size is relative to the size of the viewport width */
+    background-color: rgba(0, 0, 0, 0.75); /*gives a slightly transparent black ground */
+    font-weight: bold;
+    border-radius: 0px, 0px 7px 7px; /*gives the text background rounded corners on the bottom left and right corners */
+}
+
+/* styling of the dots under the slideshow */
+.dot {
+    cursor: pointer;
+    height: 1vw;
+    width: 1vw;
+    margin: .25vw;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    z-index: 1;
+}
+
+/*hover effect for slideshow dots */
+.active, .dot:hover {
+    background-color: black; /*sets the color of the dots when active or hovered over*/
+}
+
+/* fading animation for slideshow */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4;} /* image starts transparent */
+    to {opactiy: 1;} /* image ends opaque */
+}
+
+@keyframes fade {
+    from {opacity: .4;} /*image starts transparent */
+    to {opacity: 1;} /* image ends opaque*/
+}
+
+
 /* Table Styling - This section covers the styling of the columns and rows with the table */
 * {
     box-sizing:border-box;
@@ -284,9 +399,3 @@ form {
     font-family: "Trebuchet MS", Optima;
 }
 /* End of contact form styling */
-
-
-
-
-
-

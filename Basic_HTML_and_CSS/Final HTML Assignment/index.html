@@ -13,6 +13,7 @@
         <!--Nav Bar-->
         <div class="Navbar">
             <a class="active" href="#Home">Home</a>
+            <a href="Slideshow">Slideshow</a>
             <a href="#About">About</a>
             <a href="#GitHub">Github</a>
             <a href="#Contact">Contact</a>
@@ -25,7 +26,7 @@
         <!--Background video-->
         <div id="Home">
             <video autoplay muted loop id="Typing_Video">
-                <source src="images/video1.mp4" type="video/mp4">
+                <source src="images/video/video1.mp4" type="video/mp4">
             </video>
         </div>
 
@@ -46,6 +47,52 @@
             </strong>
         </div>
         
+
+        <!--slideshow section added to the project-->
+        <div id="Slideshow">
+            <div id="Slideshow_Background">
+                <div id="Slideshow_Container">
+                <!--Slide 1-->
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="images/Jay P.jpeg" alt="Picture of yourself">
+                    <div class="text">I'm available to assist you on your project!</div>
+                </div>
+                <!--Slide 2-->
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="images/HCJ.jpg" atl="HTML, CSS and JS logos">
+                    <div class="text">I am a full-stack sofware developer,<br> trained in:<br>HTML, CSS, JavaScript,</div>
+                </div>
+                <!--Slide 3-->
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="images/sql.jpg" atl="AI Developer">
+                    <div class="text"> databases and SQL,</div>
+                </div>
+                <!--Slide 4-->
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="images/AI.jpg" atl="AI Developer">
+                    <div class="text">with a focus on AI development.</div>
+                </div>
+                <!--Slide 5-->
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="images/ContactMe.jpeg" atl="Contact Me">
+                    <div class="text"><a class="white-text contact" onclick="openForm()">Contact me now!</a></div>
+                </div>
+                <!--Previous and next buttons-->
+                <a class="Previous" onclick="plusSlide(-1)">&#10094;</a>
+                <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br> <!--Adds a space between the slideshow images and the dots-->
+
+                <!--Slideshow dots (these are another way for users to navigate through the slideshow)-->
+                <div style="text-align: center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                </div>
+            </div>
+        </div>
 
         <!--About Section-->
         <div class="Row" id="About">
@@ -112,5 +159,6 @@
                 <br>
             </p>
         </footer>
+        <script src="JS/portfolioJS.js"></script>
     </body>
 </html>
